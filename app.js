@@ -21,6 +21,8 @@ function sortearAmigo() {
         } else {
         let amigoSorteado = parseInt(Math.random() * sorteio);
         exibirTextoNaTela('h3',listaAmigos[amigoSorteado]);
+        listaAmigos.splice(amigoSorteado, 1);
+        exibirTextoNaTela('h5',listaAmigos);
     }
 }
 
