@@ -4,15 +4,16 @@ let listaAmigos = [];
 function adicionarAmigo() {
     let amigos = document.querySelector ('input').value;
     if (amigos == '') {
-        alert ('DIGITE UM NOME');
+        alert ('DIGITE UM NOME VALIDO');
     } else {
             console.log(amigos);
             listaAmigos.push(amigos);
             amigos = document.querySelector ('input');
             amigos.value = '';
+            exibirTextoNaTela('h5',listaAmigos);
+            
         }
     }
-
 
 function sortearAmigo() {
     sorteio = listaAmigos.length;
@@ -25,6 +26,10 @@ function sortearAmigo() {
     }
 }
 
-    
+function exibirTextoNaTela(tag, texto) {
+    let campo = document.querySelector(tag);
+    campo.innerHTML = texto;
+    }
+
 
 

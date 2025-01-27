@@ -160,3 +160,11 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+.section-amigos {
+    font-family: "Inter", cursive;
+    font-size: 26px;
+    font-weight: 700;
+    color: rgba(17, 17, 17, 0.849);
+    margin: 1em;
+    text-align: center;
+}
