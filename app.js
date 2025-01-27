@@ -6,7 +6,6 @@ function adicionarAmigo() {
     if (amigos == '') {
         alert ('DIGITE UM NOME VALIDO');
     } else {
-            console.log(amigos);
             listaAmigos.push(amigos);
             amigos = document.querySelector ('input');
             amigos.value = '';
@@ -19,10 +18,9 @@ function sortearAmigo() {
     sorteio = listaAmigos.length;
     if (sorteio == 0) {
         alert ('ADICIONE UM NOME PRIMEIRO');
-    } else {
-        console.log(sorteio);
+        } else {
         let amigoSorteado = parseInt(Math.random() * sorteio);
-        console.log(listaAmigos[amigoSorteado]);
+        exibirTextoNaTela('h3',listaAmigos[amigoSorteado]);
     }
 }
 
