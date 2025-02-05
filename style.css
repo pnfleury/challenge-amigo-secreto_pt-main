@@ -168,3 +168,19 @@ ul {
     margin: 1em;
     text-align: center;
 }
+
+.lista-amigos{
+    margin: 1em;
+    font-family: "Inter", cursive;
+    font-size: 35px;
+    font-weight: 700;
+}
+.amigo-sorteado {
+    color:#05DF05;
+    margin: 1em;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-family:Verdana;
+    font-size: 50px;
+    font-weight: 700;
+    
+}
